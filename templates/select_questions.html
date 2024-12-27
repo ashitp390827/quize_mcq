@@ -1,0 +1,20 @@
+<!-- templates/quiz_screen.html -->
+{% extends 'layout.html' %}
+{% block content %}
+<h2>Unit: {{ unit_name }}</h2>
+<p>Question {{ question_index + 1 }}/{{ total_questions }}:</p>
+<p>{{ question['Question'] }}</p>
+<form method="post">
+    {% for option, text in options.items() %}
+        <div>
+            <input type="radio" id="option_{{ option }}" name="answer" value="{{ option }}">
+            <label for="option_{{ option }}">{{ text }}</label>
+        </div>
+    {% endfor %}
+    <button type="submit">Submit Answer</button>
+</form>
+<p>Current Score: {{ score }}</p>
+{% if feedback %}
+<p>{{ feedback }}</p>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .menu a {
+            font-size: 1.2em;
+            color: #4CAF50;
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: white;
+            border-radius: 5px;
+            border: 2px solid #4CAF50;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .menu a:hover {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Quiz App</h1>
+        <p>Select a unit to start:</p>
+    </header>
+
+    <main class="container py-4">
+        <div class="row justify-content-center">
+            <ul class="menu list-unstyled col-md-6 text-center">
+                <li class="my-3"><a href="/unit/1" class="d-block">Food Technology</a></li>
+                <li class="my-3"><a href="/unit/2" class="d-block">Dairy Technology</a></li>
+                <li class="my-3"><a href="/unit/3" class="d-block">Veterinary Sciences</a></li>
+                <li class="my-3"><a href="/unit/4" class="d-block">Nutritional Biochemistry and Food Analysis</a></li>
+                <li class="my-3"><a href="/unit/5" class="d-block">Microbiological, Biotechnological and Medical Aspects</a></li>
+                <li class="my-3"><a href="/unit/6" class="d-block">All Units</a></li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Quiz App. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
